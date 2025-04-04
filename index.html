@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" contant="red">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الجريمة</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Rakkas&family=Rowdies:wght@300;400;700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            scroll-behavior: smooth;
+            font-family: "Rakkas";
+            /* font-family: "Rowdies"; */
+            /* font-family: "Handjet"; */
+        }
+
+        body {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .game-box {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .one-box,
+        .two-box,
+        .three-box,
+        .four-box,
+        .five-box,
+        .sex-box,
+        .seven-box {
+            box-shadow: 0px 0px 100px black inset;
+            background: url(./background.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 2em;
+            text-shadow: 0px 0px 5px black;
+            position: absolute;
+            padding: 0 50px;
+            padding-bottom: 80px;
+
+        }
+
+        h1 {
+            color: red;
+            margin-bottom: 20px;
+        }
+
+        button {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1em;
+            background-color: transparent;
+            border: none;
+            text-decoration: underline;
+        }
+
+        .hr {
+            width: 100%;
+            height: 5px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-box" id="gameBox">
+        <div class="one-box" id="oneBox" style="z-index: 99999; display: flex;">
+            <div>
+                <h1>الجريمة</h1>
+                <p>عملية تزوير في اوراق قرض لتاجر عربيات</p>
+            </div>
+            <button id="oneBtn">التالي</button>
+        </div>
+        <div class="two-box" id="twoBox" style="z-index: 9999;">
+            <div class="card">
+                <h1>المتهم الأول</h1>
+                <div>
+                    <h4>الأسم: مروان امام</h4>
+                    <h4>المهنة: ساعي البريد</h4>
+                    <h4>الحالة: مجرم</h4>
+                </div>
+            </div>
+            <button id="twoBtn">التالي</button>
+        </div>
+        <div class="three-box" id="threeBox" style="z-index: 999;">
+            <div class="card">
+                <h1>المتهم الثاني</h1>
+                <div>
+                    <h4>الأسم: يحيي الصادي</h4>
+                    <h4>المهنة: مدير فرع البنك</h4>
+                    <h4>الحالة: بريء</h4>
+                </div>
+            </div>
+            <button id="threeBtn">التالي</button>
+        </div>
+        <div class="four-box" id="fourBox" style="z-index: 99;">
+            <div class="card">
+                <h1>المتهم الثالث</h1>
+                <div>
+                    <h4>الأسم: احمد عصام</h4>
+                    <h4>المهنة: سكرتير المدير</h4>
+                    <h4>الحالة: بريء</h4>
+                </div>
+            </div>
+            <button id="fourBtn">التالي</button>
+        </div>
+        <div class="five-box" id="fiveBox" style="z-index: 9;">
+            <div class="card">
+                <h1>المتهم الرابع</h1>
+                <div>
+                    <h4>الأسم: حازم راغب</h4>
+                    <h4>المهنة: مدير المبيعات</h4>
+                    <h4>الحالة: بريء</h4>
+                </div>
+            </div>
+            <button id="fiveBtn">التالي</button>
+        </div>
+        <div class="sex-box" id="sexBox" style="z-index: 8;">
+            <div class="card">
+                <h1>الأدلة</h1>
+                <div>
+                    <h4>تاجر العربيات له صلة قرابة بالمزور</h4>
+                    <div class="hr"></div>
+                    <h4>الي مضي بالموافقة لم يكن يعلم انها موافقة القرض وليس هو من مضي</h4>
+                    <div class="hr"></div>
+                    <h4>الي سرق الختم حد خدوم وله مصلحة فلوس بس مش كبيرة</h4>
+                </div>
+                <button id="sexBtn">التالي</button>
+            </div>
+        </div>
+        <div class="seven-box" id="sevenBox" style="z-index: 7;">
+            <div class="card">
+                <h1>القصة</h1>
+                <div>
+                    <h4>تاجر العربيات كان جاي ياخد قرض كبير علشان يمول المعرض الجديد ولاكن اوراقه مكانتش كاملة فساعي البريد علشان قريبة قدر يختم الورق بستخدام ثقة الموظفين فيه وخلي المدير يختم هو كمان وهو مشغول وهكذا تمتت العملية</h4>
+                </div>
+                <button id="sevenBtn">النهاية</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let oneBox = document.getElementById("oneBox");
+        let oneBtn = document.getElementById("oneBtn");
+        oneBtn.onclick = function () {
+            oneBox.style.display = "none";
+            twoBox.style.display = "flex";
+        }
+        let twoBox = document.getElementById("twoBox");
+        let twoBtn = document.getElementById("twoBtn");
+        twoBtn.onclick = function () {
+            twoBox.style.display = "none";
+            threeBox.style.display = "flex";
+        }
+        let threeBox = document.getElementById("threeBox");
+        let threeBtn = document.getElementById("threeBtn");
+        threeBtn.onclick = function () {
+            threeBox.style.display = "none";
+            fourBox.style.display = "flex";
+        }
+        let fourBox = document.getElementById("fourBox");
+        let fourBtn = document.getElementById("fourBtn");
+        fourBtn.onclick = function () {
+            fourBox.style.display = "none";
+            fiveBox.style.display = "flex";
+        }
+        let fiveBox = document.getElementById("fiveBox");
+        let fiveBtn = document.getElementById("fiveBtn");
+        fiveBtn.onclick = function () {
+            fiveBox.style.display = "none";
+            sexBox.style.display = "flex";
+        }
+        let sexBox = document.getElementById("sexBox");
+        let sexBtn = document.getElementById("sexBtn");
+        sexBtn.onclick = function () {
+            sexBox.style.display = "none";
+            sevenBox.style.display = "flex";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
